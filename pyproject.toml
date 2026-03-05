@@ -1,0 +1,12 @@
+[project]
+name = "patientping"
+version = "0.1.0"
+description = "Because memory is not a medical device. Ping now, panic never."
+requires-python = ">=3.12"
+dependencies = [
+    "psycopg[binary]>=3.2",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+patientping = "patientping:main"
